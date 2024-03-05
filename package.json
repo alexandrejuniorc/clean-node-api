@@ -11,14 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "eslint-config-standard-with-typescript": "^43.0.1", 
-    "git-commit-msg-linter": "^5.0.7",
-    "typescript": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1"
-  },
-  "dependencies": {}
+    "eslint-plugin-promise": "^6.1.1",
+    "git-commit-msg-linter": "^5.0.7",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "typescript": "^5.3.3"
+  }
 }
