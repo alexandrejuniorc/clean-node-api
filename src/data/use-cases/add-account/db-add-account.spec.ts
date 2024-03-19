@@ -86,7 +86,7 @@ describe('DbAddAccount UseCase', () => {
     await expect(promiseAccount).rejects.toThrow()
   })
 
-  it('should call AddAccountRepository with correct password', async () => {
+  it('should call AddAccountRepository with correct values', async () => {
     const { sut, addAccountRepositoryStub } = makeSut()
     const addSpy = jest.spyOn(addAccountRepositoryStub, 'add')
 
@@ -118,5 +118,23 @@ describe('DbAddAccount UseCase', () => {
 
     const promiseAccount = sut.add(accountData)
     await expect(promiseAccount).rejects.toThrow()
+  })
+
+  it('should return an account on success', async () => {
+    const { sut } = makeSut()
+
+    const accountData = {
+      name: 'valid_name',
+      email: 'valid_email',
+      password: 'valid_password'
+    }
+
+    const account = await sut.add(accountData)
+    expect(account).toEqual({
+      id: 'valid_id',
+      name: 'valid_name',
+      email: 'valid_email',
+      password: 'hashed_password'
+    })
   })
 })
