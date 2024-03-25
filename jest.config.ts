@@ -14,7 +14,8 @@ const config: Config = {
     '.+\\.ts$': 'ts-jest'
   },
   collectCoverage: true,
-  coverageProvider: 'v8'
+  coverageProvider: 'v8',
+  preset: '@shelf/jest-mongodb'
 }
 
 export default config
