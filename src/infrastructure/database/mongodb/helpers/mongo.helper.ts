@@ -13,5 +13,16 @@ export const MongoHelper = {
 
   getCollection (name: string): Collection {
     return this.client.db().collection(name)
+  },
+
+  map (collection: any): any {
+    const { _id, ...collectionWithoutId } = collection
+
+    return Object.assign({}, collectionWithoutId, {
+      id: _id.toString(),
+      name: collectionWithoutId.name,
+      email: collectionWithoutId.email,
+      password: collectionWithoutId.password
+    })
   }
 }
