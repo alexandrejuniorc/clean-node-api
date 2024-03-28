@@ -1,11 +1,6 @@
-import express from 'express'
+import { app } from './config/app'
 
-const app = express()
 const port = 3000
-
-app.get('/', (req, res) => {
-  return res.json({ message: 'Hello World' })
-})
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
