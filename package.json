@@ -1,0 +1,28 @@
+{
+  "name": "clean-node-api",
+  "description": "Node API with Clean Architecture",
+  "version": "1.0.0",
+  "author": "Alexandre Junior",
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "api",
+    "clean architecture",
+    "typescript",
+    "solid",
+    "design patterns",
+    "software engineering",
+    "software architecture",
+    "software design",
+    "tdd",
+    "solid"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrejuniorc/clean-node-api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
