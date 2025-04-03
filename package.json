@@ -23,10 +23,10 @@
     "url": "git+https://github.com/alexandrejuniorc/clean-node-api.git"
   },
   "scripts": {
-    "test": "jest",
-    "prepare": "husky",
-    "lint": "eslint .",
-    "husky:prepare": "husky install"
+    "husky:prepare": "husky",
+    "test": "jest --passWithNoTests",
+    "test:watch": "npm run test -- --watch",
+    "test:staged": "npm run test -- --findRelatedTests"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
