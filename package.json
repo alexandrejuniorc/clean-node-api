@@ -25,7 +25,8 @@
   "scripts": {
     "test": "jest",
     "prepare": "husky",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "husky:prepare": "husky install"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
