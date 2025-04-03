@@ -25,8 +25,8 @@
   "scripts": {
     "husky:prepare": "husky",
     "test": "jest --passWithNoTests",
-    "test:watch": "npm run test -- --watch",
-    "test:staged": "npm run test -- --findRelatedTests"
+    "test:watch": "pnpm test -- --watch",
+    "test:staged": "pnpm test -- --findRelatedTests"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",

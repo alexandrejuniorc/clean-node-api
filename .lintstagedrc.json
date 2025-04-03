@@ -1,6 +1,7 @@
 {
   "*.ts": [
     "npx eslint 'src/**/*.ts' --fix",
-    "npx prettier --check 'src/**/*.ts'"
+    "npx prettier --check 'src/**/*.ts'",
+    "pnpm test:staged"
   ]
 }
